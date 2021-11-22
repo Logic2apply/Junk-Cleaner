@@ -1,16 +1,11 @@
 import tkinter as tk
 import os, shutil
 from tkinter import Button, Checkbutton, Entry, Frame, IntVar, Label, StringVar
-from tkinter.messagebox import askquestion, showerror, showinfo, showwarning
+from tkinter.messagebox import askquestion, showerror, showwarning
 from tkinter.font import BOLD
-# from win32com import client
 from PIL import Image, ImageTk
 from plyer import notification
 
-
-# def speak(string):
-#     speaker = client.Dispatch("SAPI.SpVoice")
-#     speaker.Speak(string)
 
 def winNotify(title, desc):
     notification.notify(
